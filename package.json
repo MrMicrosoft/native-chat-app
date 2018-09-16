@@ -8,6 +8,7 @@
     "@types/react-dom": "^16.0.7",
     "@types/react-native": "^0.56.17",
     "@types/react-test-renderer": "^16.0.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "concurrently": "^4.0.1",
     "jest-expo": "~27.0.0",
     "react-native-scripts": "1.14.0",
@@ -19,7 +20,7 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "npm run buildAndStart",
+    "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
@@ -40,8 +41,14 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@types/react-navigation": "^2.0.21",
     "expo": "^27.0.1",
+    "mobx": "^4.3.1",
     "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "react-mobx": "0.0.4",
+    "react-native": "~0.55.2",
+    "react-native-router-flux": "^4.0.1",
+    "react-native-vector-icons": "^5.0.0",
+    "react-navigation": "^2.14.2"
   }
 }
